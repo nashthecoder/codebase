@@ -44,7 +44,11 @@ This project follows a **multi-platform architecture** with:
 
 ```
 codebase/
-├── dev-setup.html          # Development environment setup guide
+├── docs/
+│   ├── README.md           # Documentation overview
+│   └── setup/
+│       ├── README.md       # Setup guide documentation
+│       └── index.html      # Interactive setup guide (open in browser)
 └── code/
     ├── assets/             # Shared assets (AppIcon, etc.)
     ├── ch01_XX/            # Chapter 1: Project setup and basics
@@ -95,11 +99,18 @@ Before setting up the project, ensure you have the following installed:
 
 ### Setup Instructions
 
-For detailed setup instructions, open the `dev-setup.html` file in your browser:
+For comprehensive setup instructions, including VS Code extensions, Claude Code plugins, and development workflows, see our **[Interactive Setup Guide](docs/setup/index.html)**:
 
 ```bash
-open dev-setup.html
+open docs/setup/index.html
 ```
+
+The guide covers:
+- VS Code configuration and extensions
+- Claude Code CLI and AI plugins
+- Rails stack with Maquina tools
+- React/Next.js with TypeScript and Tailwind
+- Product management workflows with MVP Creator
 
 Or follow the quick setup below:
 
@@ -216,6 +227,27 @@ Each sub-project has its own `.gitignore` file configured for:
 - **API Communication**: Mobile apps communicate with the Rails backend via HTTP/JSON.
 - **Asset Management**: Shared assets are in the `code/assets/` directory.
 
+## 📚 Documentation
+
+### Interactive Setup Guide
+
+The [docs/setup/](docs/setup/) directory contains a comprehensive interactive HTML guide for setting up your complete development environment:
+
+**Open the guide**: `open docs/setup/index.html`
+
+The guide includes:
+- **VS Code Setup** - Extensions for Rails, React, and Tailwind CSS
+- **Claude Code CLI** - AI coding assistant with plugins
+- **Rails Stack** - Maquina tools, 37signals patterns, and generators
+- **React Stack** - Next.js 15, TypeScript, and modern tooling
+- **Product Management** - MVP Creator workflow and documentation
+- **Development Workflows** - 8+ workflows for Rails and React
+
+### Additional Documentation
+
+- [docs/README.md](docs/README.md) - Documentation overview
+- [docs/setup/README.md](docs/setup/README.md) - Detailed setup guide documentation
+
 ## 🤝 Contributing
 
 This appears to be a tutorial/course repository. If you're working through the course:
@@ -235,18 +267,26 @@ This appears to be a tutorial/course repository. If you're working through the c
 
 ## 🔗 Resources
 
+### Framework Documentation
 - [Ruby on Rails Documentation](https://guides.rubyonrails.org/)
 - [Swift Documentation](https://swift.org/documentation/)
 - [Kotlin Documentation](https://kotlinlang.org/docs/home.html)
 - [Android Jetpack Compose](https://developer.android.com/jetpack/compose)
 
+### Development Tools
+- [Maquina App](https://maquina.app) - Rails tools and UI components
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
+
 ## 📞 Support
 
 For questions or issues:
-1. Check the `dev-setup.html` guide
-2. Review the specific chapter's code
-3. Compare with adjacent chapters to understand changes
-4. (Add support contact information if applicable)
+1. Check the [Interactive Setup Guide](docs/setup/index.html)
+2. Review the [docs/](docs/) directory for additional documentation
+3. Review the specific chapter's code
+4. Compare with adjacent chapters to understand changes
+5. (Add support contact information if applicable)
 
 ---
 
