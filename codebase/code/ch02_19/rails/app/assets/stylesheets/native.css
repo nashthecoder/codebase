@@ -1,0 +1,15 @@
+* {
+  -webkit-user-select: none;
+}
+
+.hotwire-native-text-select {
+  -webkit-user-select: auto;
+}
+
+.d-hotwire-native-none {
+  display: none !important;
+}
+
+.d-hotwire-native-block {
+  display: block !important;
+}

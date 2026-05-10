@@ -1,0 +1,36 @@
+<%#
+ #   Excerpted from "Hotwire Native for Rails Developers",
+ #   published by The Pragmatic Bookshelf.
+ #   Copyrights apply to this code. It may not be used to create training material,
+ #   courses, books, articles, and the like. Contact us if you are in doubt.
+ #   We make no guarantees that this code is fit for any purpose.
+ #   Visit https://pragprog.com/titles/jmnative for more book information.
+%>
+<% content_for :title, "Sign in" %>
+
+<div class="container d-flex flex-column mw-400 mx-auto">
+  <h1 class="h3 my-4 mx-auto">
+    Sign in to your account
+  </h1>
+
+  <%= form_with url: session_path, class: "row g-3 mt-1" do |form| %>
+    <div>
+      <%= form.label :email, class: "form-label" %>
+      <%= form.email_field :email,
+        autocomplete: "email",
+        class: "form-control",
+        value: "user@example.com" %>
+    </div>
+
+    <div>
+      <%= form.label :password, class: "form-label" %>
+      <%= form.password_field :password,
+        autocomplete: "current-password",
+        class: "form-control", value: "password" %>
+    </div>
+
+    <div>
+      <%= form.submit "Sign in", class: "btn btn-primary w-100" %>
+    </div>
+  <% end %>
+</div>
